@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import backgroundImage1 from "../../images/home_bg2.png";
-import backgroundImage2 from "../../images/home_middleImg.png";
+import backgroundImage2 from "../../images/earth.png";
 import backgroundImage3 from "../../images/home_design.png";
 import homeMinion from "../../images/home_minion.png";
 import { Button } from "@material-tailwind/react";
-import clickToOpen from "../../images/click_to_open.png";
+import AboutMe from "../About/AboutMe";
+
 
 const Home = () => {
   return (
@@ -48,10 +49,8 @@ const Home = () => {
       </div>
       <img className="absolute pb-32" src={homeMinion} alt="homeMinion" />
       <div className="absolute flex items-center justify-center pt-64">
-        <Button className="text-white text-2xl w-3/4 h-3/4 ">
-          <img src={clickToOpen} alt="click to open button" />
-        </Button>
-      </div>
+        <AboutMe/>
+      </div> 
     </div>
   );
 };
