@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './components/Home/Home';
 import AboutMe from './components/About/AboutMe';
 import Skills from './components/Skills/Skills';
+import Contact from './components/Contact/Contact';
+import Experience from './components/Experience/Experience';
+import Projects from './components/Projects/Projects';
 
 const MyRoutes = () => {
     return(
@@ -11,6 +14,9 @@ const MyRoutes = () => {
             <Route path='/' element = {<Home/>}/>
             {/* <Route path='/aboutme' element = {<AboutMe/>}/> */}
             <Route path='/skills' element = {<Skills/>}/>
+            <Route path='/contact' element = {<Contact/>}/>
+            <Route path='/experience' element = {<Experience/>}/>
+            <Route path='/projects' element = {<Projects/>}/>
         </Routes>
         </BrowserRouter>
     )

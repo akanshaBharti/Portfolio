@@ -5,6 +5,7 @@ import backgroundImage3 from "../../images/home_design.png";
 import homeMinion from "../../images/home_minion.png";
 import { Button } from "@material-tailwind/react";
 import AboutMe from "../About/AboutMe";
+import navbarIcon from "../../images/navbar.png";
 
 
 const Home = () => {
