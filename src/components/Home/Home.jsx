@@ -6,7 +6,7 @@ import homeMinion from "../../images/home_minion.png";
 import { Button } from "@material-tailwind/react";
 import AboutMe from "../About/AboutMe";
 import navbarIcon from "../../images/navbar.png";
-
+import Navbar from "../Navbar/Navbar";
 
 const Home = () => {
   return (
@@ -45,13 +45,15 @@ const Home = () => {
           </div>
         </div>
         <div className="absolute top-0 right-0 mr-4 mt-2 ">
-          <Button className="text-white text-2xl ">CONTACT ME</Button>
+          <Button>
+            <Navbar />
+          </Button>
         </div>
       </div>
       <img className="absolute pb-32" src={homeMinion} alt="homeMinion" />
       <div className="absolute flex items-center justify-center pt-64">
-        <AboutMe/>
-      </div> 
+        <AboutMe />
+      </div>
     </div>
   );
 };

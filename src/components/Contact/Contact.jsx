@@ -2,6 +2,7 @@ import React from "react";
 import contactBgMain from "../../images/contact_bgMain.png";
 import contactBg from "../../images/contact_bg.png";
 import { Button } from "@material-tailwind/react";
+import Navbar from "../Navbar/Navbar";
 
 const Contact = () => {
   return (
@@ -22,6 +23,11 @@ const Contact = () => {
             </span>
           </h1>
           </div>
+          <div className="absolute top-0 right-0 mr-4 mt-2 ">
+          <Button>
+            <Navbar />
+          </Button>
+        </div>
 
     </div>
   );

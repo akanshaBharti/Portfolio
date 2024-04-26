@@ -4,12 +4,13 @@ import skillsBg from "../../images/skills_bg.png";
 import earth from "../../images/earth.png";
 import skillsMinion from "../../images/skills_minion.png";
 import { Button } from "@material-tailwind/react";
+import Navbar from "../Navbar/Navbar";
 
 const Skills = () => {
   return (
     <div
     className="relative bg-cover bg-center h-screen flex items-center justify-center"
-    style={{ backgroundImage: `url(${skillsBgMain})` }}
+    style={{ backgroundImage: `url(${skillsBg})` }}
     >
         <div
         className="absolute bg-center h-screen w-full"
@@ -42,7 +43,9 @@ const Skills = () => {
           </div>
         </div>
         <div className="absolute top-0 right-0 mr-4 mt-2 ">
-          <Button className="text-white text-2xl ">CONTACT ME</Button>
+          <Button>
+            <Navbar />
+          </Button>
         </div>
         </div>
         <img className="absolute pb-32" src={skillsMinion} alt="homeMinion" />

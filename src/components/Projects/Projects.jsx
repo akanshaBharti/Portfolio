@@ -4,6 +4,7 @@ import projectBg from "../../images/project_bg.png";
 import projectMinion from "../../images/project_Minion.png";
 import earth from "../../images/earth.png";
 import { Button } from '@material-tailwind/react';
+import Navbar from '../Navbar/Navbar';
 
 
 const Projects = () => {
@@ -31,7 +32,9 @@ const Projects = () => {
           
         </div>
         <div className="absolute top-0 right-0 mr-4 mt-2 ">
-          <Button className="text-white text-2xl ">CONTACT ME</Button>
+          <Button>
+            <Navbar />
+          </Button>
         </div>
         </div>
         <img className="absolute pb-32" src={projectMinion} alt="homeMinion" />

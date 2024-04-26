@@ -4,6 +4,7 @@ import experienceBg from "../../images/experience_bg.png";
 import experienceMinion from "../../images/expereince_minion.png";
 import earth from "../../images/earth.png";
 import { Button } from '@material-tailwind/react';
+import Navbar from '../Navbar/Navbar';
 
 
 const Experience = () => {
@@ -43,7 +44,9 @@ const Experience = () => {
           </div> */}
         </div>
         <div className="absolute top-0 right-0 mr-4 mt-2 ">
-          <Button className="text-white text-2xl ">CONTACT ME</Button>
+          <Button>
+            <Navbar />
+          </Button>
         </div>
         </div>
         <img className="absolute pb-32" src={experienceMinion} alt="homeMinion" />
