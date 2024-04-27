@@ -7,6 +7,7 @@ import { Button } from "@material-tailwind/react";
 import AboutMe from "../About/AboutMe";
 import navbarIcon from "../../images/navbar.png";
 import Navbar from "../Navbar/Navbar";
+import Sidebar from "../Sidebar/Sidebar";
 
 const Home = () => {
   return (
@@ -19,6 +20,10 @@ const Home = () => {
         style={{ backgroundImage: `url(${backgroundImage2})`, top: 0 }}
       >
         <div className="relative z-20 flex flex-col items-center justify-center gap-4 pt-6">
+          <div className="absolute top-0 left-0 ml-4">
+            <Sidebar />
+          </div>
+
           <h1 className="text-4xl font-bold text-white text-center shadow-lg">
             <span
               className="text-purple-600"

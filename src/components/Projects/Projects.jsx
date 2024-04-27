@@ -5,6 +5,7 @@ import projectMinion from "../../images/project_Minion.png";
 import earth from "../../images/earth.png";
 import { Button } from '@material-tailwind/react';
 import Navbar from '../Navbar/Navbar';
+import Sidebar from '../Sidebar/Sidebar';
 
 
 const Projects = () => {
@@ -18,6 +19,9 @@ const Projects = () => {
         style={{ backgroundImage: `url(${earth})`, top: 0 }}
         >
             <div className="relative z-20 flex flex-col items-center justify-center gap-6 pt-6">
+            <div className="absolute top-0 left-0 ml-4">
+            <Sidebar />
+          </div>
           <h1 className="text-4xl font-bold text-white text-center shadow-lg">
             <span
               className="text-purple-600"
