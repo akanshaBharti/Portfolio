@@ -12,7 +12,7 @@ import materialUI from "../../images/materialUI.png";
 
 const TechStacks = () => {
   return (
-    <div className="grid grid-cols-4 gap-6 text-white mt-16">
+    <div className="grid grid-cols-4 gap-6 text-white mt-20">
       <div className="flex flex-row items-center border border-white w-full h-full text-3xl p-3 bg-black bg-opacity-50">
         <img src={html} alt="htmlIcon" className="w-10 h-12 mr-2"/>
         HTML
