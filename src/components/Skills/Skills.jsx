@@ -6,6 +6,7 @@ import skillsMinion from "../../images/skills_minion.png";
 import { Button } from "@material-tailwind/react";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
+import TechStacks from "./TechStacks";
 
 const Skills = () => {
   return (
@@ -44,6 +45,9 @@ const Skills = () => {
                 HERE IS THE LIST OF SOME OF MY SKILLS
               </span>
             </p>
+          </div>
+          <div >
+            <TechStacks/>
           </div>
         </div>
         <div className="absolute top-0 right-0 mr-4 mt-2 ">
