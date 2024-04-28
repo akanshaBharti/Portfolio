@@ -6,6 +6,7 @@ import earth from "../../images/earth.png";
 import { Button } from '@material-tailwind/react';
 import Navbar from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
+import ProjectDetails from './ProjectDetails';
 
 
 const Projects = () => {
@@ -33,7 +34,9 @@ const Projects = () => {
               MY PROJECTS
             </span>
           </h1>
-          
+          <div className="absolute flex items-center justify-center pt-64">
+            <ProjectDetails/>
+          </div>
         </div>
         <div className="absolute top-0 right-0 mr-4 mt-2 ">
           <Button>
