@@ -6,9 +6,10 @@ import earth from "../../images/earth.png";
 import { Button } from '@material-tailwind/react';
 import Navbar from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
+import ExperienceDetails from './ExperienceDetails';
 
 
-const Experience = () => {
+const Experience = () => { 
     return(
         <div
     className="relative bg-cover bg-center h-screen flex items-center justify-center"
@@ -33,6 +34,9 @@ const Experience = () => {
               MY WORK EXPERIENCE
             </span>
           </h1>
+          <div className="flex items-center justify-center">
+            <ExperienceDetails />
+          </div>
           {/* <div className="flex flex-col items-center space-y-4">
             <p className="text-3xl text-center shadow-lg">
               <span
