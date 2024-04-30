@@ -50,7 +50,7 @@ const ProjectDetails = () => {
       <div>
         {/* project heading */}
         <div>
-          <p className="text-3xl text-center shadow-lg mb-8 pt-4">
+          <p className="text-4xl text-center shadow-lg mb-8 pt-4">
             <span
               className="text-white"
               style={{

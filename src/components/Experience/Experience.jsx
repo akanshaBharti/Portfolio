@@ -23,7 +23,7 @@ const Experience = () => {
             <div className="absolute top-0 left-0 ml-4">
             <Sidebar />
           </div>
-          <h1 className="text-4xl font-bold text-white text-center shadow-lg">
+          <h1 className="text-5xl font-bold text-white text-center shadow-lg">
             <span
               className="text-purple-600"
               style={{
