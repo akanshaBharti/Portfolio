@@ -23,7 +23,7 @@ const AboutMe = () => {
         </Button>
       ) : (
         <div className="relative">
-          <p className=" border border-4 border-white text-white p-8 shadow-lg">
+          <p className=" border border-4 border-white text-white p-8 shadow-lg bg-black bg-opacity-50">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
           id recusandae iusto officiis impedit nesciunt quibusdam reprehenderit
           eligendi excepturi, expedita nemo, mollitia quisquam ea similique!

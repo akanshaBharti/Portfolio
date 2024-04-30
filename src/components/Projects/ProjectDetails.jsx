@@ -1,24 +1,30 @@
 import React, { useState } from "react";
+import prevButton from "../../images/prev.png";
+import nextButton from "../../images/next.png";
+import { Button } from "@material-tailwind/react";
+import githubIcon from "../../images/github.png";
+import LinkIcon from "../../images/link.png";
+import { Link } from "react-router-dom";
 
 const ProjectDetails = () => {
   const projectDetails = [
     {
       ProjectName: "Project 01",
-      // GithubLinkIcon : "",
+      GithubLinkIcon: "https://github.com/akanshaBharti",
       ProjectDescription:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architectoid recusandae iusto officiis impedit nesciunt quibusdam reprehenderiteligendi excepturi, expedita nemo, mollitia quisquam ea similique!Eaque asperiores suscipit voluptatum reprehenderit ipsa rem voluptateerror aliquam.",
-      ProjectLink: "xyz.com",
+      ProjectLink: "https://github.com/akanshaBharti",
     },
     {
       ProjectName: "Project 02",
-      // GithubLinkIcon : "",
+      GithubLinkIcon: "",
       ProjectDescription:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architectoid recusandae iusto officiis impedit nesciunt quibusdam reprehenderiteligendi excepturi, expedita nemo, mollitia quisquam ea similique!Eaque asperiores suscipit voluptatum reprehenderit ipsa rem voluptateerror aliquam.",
       ProjectLink: "Project02.com",
     },
     {
       ProjectName: "Project 03",
-      // GithubLinkIcon : "",
+      GithubLinkIcon: "",
       ProjectDescription:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architectoid recusandae iusto officiis impedit nesciunt quibusdam reprehenderiteligendi excepturi, expedita nemo, mollitia quisquam ea similique!Eaque asperiores suscipit voluptatum reprehenderit ipsa rem voluptateerror aliquam.",
       ProjectLink: "Project03.com",
@@ -40,12 +46,11 @@ const ProjectDetails = () => {
   };
 
   return (
-    <div className="flex items-center justify-center w-3/4 h-3/4 ">
+    <div className="flex items-center justify-center w-1/2 h-1/2 ">
       <div>
         {/* project heading */}
-        {/* <div className="flex flex-col items-center"> */}
         <div>
-          <p className="text-3xl text-center shadow-lg mb-8">
+          <p className="text-3xl text-center shadow-lg mb-8 pt-4">
             <span
               className="text-white"
               style={{
@@ -59,31 +64,46 @@ const ProjectDetails = () => {
         </div>
 
         {/* description box */}
-        <div className="relative">
-          <p className=" border border-2 border-white text-white p-8 shadow-lg">
-            {projectDetails[currentProjectIndex].ProjectDescription}
-            <br></br>
-            {projectDetails[currentProjectIndex].ProjectLink}
+        <div className="relative mt-44">
+          <p className=" border border-2 border-white text-white p-4 shadow-lg bg-black bg-opacity-50 flex flex-col items-center">
+            <div className="">
+              <Link
+                to={projectDetails[currentProjectIndex].GithubLinkIcon}
+                target="blank"
+              >
+                <img src={githubIcon} alt="githubIcon" className="w-16 h-16" />
+              </Link>
+            </div>
+            <div>{projectDetails[currentProjectIndex].ProjectDescription}</div>
+            <div className="">
+              <Link
+                to={projectDetails[currentProjectIndex].ProjectLink}
+                target="blank"
+              >
+                <img src={LinkIcon} alt="LinkIcon" className="w-7 h-7" />
+              </Link>
+            </div>
           </p>
         </div>
       </div>
-      
+
       {/* navigation buttons */}
-      <div className="flex justify-center mt-4">
-        <button
-          className="mr-4 px-4 py-2 bg-gray-800 text-white rounded shadow"
+      <div className="absolute justify-between flex w-full mt-4">
+        <Button
+          type="submit"
+          className="px-4 py-2 ml-20"
           onClick={goToPreviousProject}
-        //   disabled={currentProjectIndex === 0}
+          disabled={currentProjectIndex === 0}
         >
-          Previous
-        </button>
-        <button
-          className="px-4 py-2 bg-gray-800 text-white rounded shadow"
+          <img src={prevButton} alt="previousButton" />
+        </Button>
+        <Button
+          className="px-4 py-2 mr-20"
           onClick={goToNextProject}
-        //   disabled={currentProjectIndex === projectDetails.length - 1}
+          disabled={currentProjectIndex === projectDetails.length - 1}
         >
-          Next
-        </button>
+          <img src={nextButton} alt="nextButton" />
+        </Button>
       </div>
     </div>
   );
