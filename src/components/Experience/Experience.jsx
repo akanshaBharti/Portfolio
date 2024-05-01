@@ -1,6 +1,5 @@
 import React from 'react'
 import experienceBgMain from "../../images/experience_bgMain.png";
-import experienceBg from "../../images/experience_bg.png";
 import experienceMinion from "../../images/expereince_minion.png";
 import earth from "../../images/earth.png";
 import { Button } from '@material-tailwind/react';

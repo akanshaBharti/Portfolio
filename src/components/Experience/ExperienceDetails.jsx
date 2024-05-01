@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import prevButton from "../../images/prev.png";
 import nextButton from "../../images/next.png";
 import { Button } from "@material-tailwind/react";
-import githubIcon from "../../images/github.png";
-import LinkIcon from "../../images/link.png";
-import { Link } from "react-router-dom";
+
 
 const ExperienceDetails = () => {
   const experienceDetails = [

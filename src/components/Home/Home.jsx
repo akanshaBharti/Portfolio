@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import backgroundImage1 from "../../images/home_bg2.png";
 import backgroundImage2 from "../../images/earth.png";
-import backgroundImage3 from "../../images/home_design.png";
 import homeMinion from "../../images/home_minion.png";
 import { Button } from "@material-tailwind/react";
 import AboutMe from "../About/AboutMe";
-import navbarIcon from "../../images/navbar.png";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
 

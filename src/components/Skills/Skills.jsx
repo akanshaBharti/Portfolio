@@ -1,5 +1,4 @@
 import React from "react";
-import skillsBgMain from "../../images/skills_bgMain.png";
 import skillsBg from "../../images/skills_bg.png";
 import earth from "../../images/earth.png";
 import skillsMinion from "../../images/skills_minion.png";

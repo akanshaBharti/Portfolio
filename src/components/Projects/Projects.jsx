@@ -1,6 +1,5 @@
 import React from "react";
 import projectBgMain from "../../images/project_bgMain.png";
-import projectBg from "../../images/project_bg.png";
 import projectMinion from "../../images/project_Minion.png";
 import earth from "../../images/earth.png";
 import { Button } from "@material-tailwind/react";

@@ -1,5 +1,4 @@
 import React from "react";
-import contactBgMain from "../../images/contact_bgMain.png";
 import contactBg from "../../images/contact_bg.png";
 import { Button } from "@material-tailwind/react";
 import Navbar from "../Navbar/Navbar";
