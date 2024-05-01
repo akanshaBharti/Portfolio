@@ -11,11 +11,11 @@ const Navbar = () => {
 
     return(
         <div className="relative z-50">
-            <div className="fixed top-0 right-0 z-50 p-4">
+            <div className="fixed top-0 right-0 z-50 p-4 ">
                 <img src={navbarIcon} alt="Navbar Icon" className="w-16 h-16 cursor-pointer" onClick={toggleNavbar} />
             </div>
             {isOpen && (
-                <div className="fixed right-0 bg-black bg-opacity-50 text-white w-56 p-4 mr-2 rounded-lg border border-white">
+                <div className="fixed right-0 bg-black bg-opacity-75 text-white w-56 p-4 mr-2 rounded-lg border border-white">
                     <div className="flex flex-col items-center">
                         <Link to="/home" className="py-2 px-4 hover:bg-gray-700">Home</Link>
                         <Link to="/experience" className="py-2 px-4 hover:bg-gray-700">Work Experience</Link>

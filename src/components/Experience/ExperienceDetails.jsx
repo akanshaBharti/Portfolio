@@ -38,11 +38,11 @@ const ExperienceDetails = () => {
   };
 
   return (
-    <div className="flex items-center justify-center w-1/2 h-1/2 ">
+    <div className="flex items-center justify-center w-3/4 h-1/2 md:w-1/2 ">
       <div>
         {/* project heading */}
         <div>
-          <p className="text-4xl text-center shadow-lg mb-8 pt-4">
+          <p className="text-3xl md:text-4xl text-center shadow-lg mb-8 pt-4">
             <span
               className="text-white"
               style={{
@@ -56,7 +56,7 @@ const ExperienceDetails = () => {
         </div>
 
         {/* description box */}
-        <div className="relative mt-48">
+        <div className="relative md:mt-44 mt-36">
           <p className=" border border-2 border-white text-white p-8 shadow-lg bg-black bg-opacity-50 ">
             {experienceDetails[currentExperienceIndex].ExperienceDescription}
           </p>
@@ -64,17 +64,17 @@ const ExperienceDetails = () => {
       </div>
 
       {/* navigation buttons */}
-      <div className="absolute justify-between flex w-full mt-4">
+      <div className="absolute justify-between flex w-full md:mt-4">
         <Button
           type="submit"
-          className="px-4 py-2 ml-20"
+          className="px-2 md:px-4 py-2 md:ml-20"
           onClick={goToPreviousExperience}
           disabled={currentExperienceIndex === 0}
         >
           <img src={prevButton} alt="previousButton" />
         </Button>
         <Button
-          className="px-4 py-2 mr-20"
+          className="px-2 md:px-4 py-2 md:mr-20"
           onClick={goToNextExperience}
           disabled={currentExperienceIndex === experienceDetails.length - 1}
         >

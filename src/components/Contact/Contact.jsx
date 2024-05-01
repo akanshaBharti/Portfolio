@@ -12,10 +12,11 @@ const Contact = () => {
     >
       <div className="absolute w-full h-screen bg-center">
         <div className="relative z-20 flex flex-col items-center justify-center gap-6 pt-6">
-          <div className="absolute top-0 left-0 ml-4">
+          <div className="absolute md:top-0 md:left-0 ml-4"> 
+          {/* hidden md:block  */}
             <Sidebar />
           </div>
-          <h1 className="text-5xl font-bold text-white text-center shadow-lg">
+          <h1 className="text-4xl md:text-5xl font-bold text-white text-center shadow-lg">
             <span
               className="text-purple-600"
               style={{

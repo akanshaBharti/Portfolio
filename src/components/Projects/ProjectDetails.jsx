@@ -17,7 +17,7 @@ const ProjectDetails = () => {
     },
     {
       ProjectName: "Project 02",
-      GithubLinkIcon: "",
+      GithubLinkIcon: "https://github.com/akanshaBharti",
       ProjectDescription:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architectoid recusandae iusto officiis impedit nesciunt quibusdam reprehenderiteligendi excepturi, expedita nemo, mollitia quisquam ea similique!Eaque asperiores suscipit voluptatum reprehenderit ipsa rem voluptateerror aliquam.",
       ProjectLink: "Project02.com",
@@ -50,7 +50,7 @@ const ProjectDetails = () => {
       <div>
         {/* project heading */}
         <div>
-          <p className="text-4xl text-center shadow-lg mb-8 pt-4">
+          <p className="text-3xl md:text-4xl text-center shadow-lg mb-8 pt-4">
             <span
               className="text-white"
               style={{
@@ -64,10 +64,10 @@ const ProjectDetails = () => {
         </div>
 
         {/* description box */}
-        <div className="relative mt-32 md:mt-44 ">
+        <div className="relative mt-44 ">
           <p className=" border border-2 border-white text-white p-4 shadow-lg bg-black bg-opacity-50 flex flex-col items-center">
             <div className="">
-              <Link
+            <Link
                 to={projectDetails[currentProjectIndex].GithubLinkIcon}
                 target="blank"
               >
@@ -90,15 +90,15 @@ const ProjectDetails = () => {
       {/* navigation buttons */}
       <div className="absolute justify-between flex w-full md:mt-4">
         <Button
-          type="submit"
-          className="px-4 py-2  md:ml-20"
+          type="submit" 
+          className="px-2 md:px-4 py-2 md:ml-20 "
           onClick={goToPreviousProject}
           disabled={currentProjectIndex === 0}
         >
           <img src={prevButton} alt="previousButton" />
         </Button>
         <Button
-          className="px-4 py-2 md:mr-20"
+          className="px-2 md:px-4 py-2 md:mr-20"
           onClick={goToNextProject}
           disabled={currentProjectIndex === projectDetails.length - 1}
         >
