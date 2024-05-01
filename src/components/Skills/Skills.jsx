@@ -11,15 +11,15 @@ import TechStacks from "./TechStacks";
 const Skills = () => {
   return (
     <div
-    className="relative bg-cover bg-center h-screen flex items-center justify-center"
+    className="relative bg-cover bg-center min-h-screen flex items-center justify-center"
     style={{ backgroundImage: `url(${skillsBg})` }}
     >
         <div
-        className="absolute bg-center h-screen w-full"
+        className="absolute bg-center md:h-screen md:w-full w-full h-screen"
         style={{ backgroundImage: `url(${earth})`, top: 0 }}
         >
             <div className="relative z-20 flex flex-col items-center justify-center gap-6 pt-6">
-            <div className="absolute top-0 left-0 ml-4">
+            <div className="absolute top-0 left-0 ml-4 hidden md:block">
             <Sidebar />
           </div>
           <h1 className="text-5xl font-bold text-white text-center shadow-lg">

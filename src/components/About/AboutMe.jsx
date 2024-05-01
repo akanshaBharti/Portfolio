@@ -17,17 +17,17 @@ const AboutMe = () => {
       {!showAboutMe ? (
         <Button
           type="submit"
-          className="text-white text-2xl w-3/4 h-3/4 "
+          className="text-white text-2xl w-3/4"
           onClick={handleShowAboutMe}
         >
           <img
             src={clickToOpen}
             alt="click to open button"
-            className="w-3/4 h-3/4"
+            className="w-1/2 h-3/4 ml-16 md:w-3/4 md:ml-10"
           />
         </Button>
       ) : (
-        <div className="relative w-1/2 h-1/2" >
+        <div className="relative w-3/4 h-1/2 md:w-1/2" >
           <div className="absolute top-0 right-0 m-2">
             <Button className="" onClick={handleCloseAboutMe}>
               <img src={closeButton} alt="closeButton" className="w-7 h-7" />
