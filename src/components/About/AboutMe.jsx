@@ -27,7 +27,7 @@ const AboutMe = () => {
           />
         </Button>
       ) : (
-        <div className="relative w-3/4 h-1/2 md:w-1/2" >
+        <div className="relative w-3/4 h-1/2 md:w-1/2 mb-2" >
           <div className="absolute top-0 right-0 m-2">
             <Button className="" onClick={handleCloseAboutMe}>
               <img src={closeButton} alt="closeButton" className="w-7 h-7" />
