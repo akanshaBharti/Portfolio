@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return(
         <div className="relative z-50">
-            <div className="fixed top-0 right-0 z-50 p-4 ">
+            <div className="fixed top-0 right-0 z-50 p-4  ">
                 <img src={navbarIcon} alt="Navbar Icon" className="w-16 h-16 cursor-pointer" onClick={toggleNavbar} />
             </div>
             {isOpen && (

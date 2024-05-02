@@ -9,25 +9,28 @@ import { Link } from "react-router-dom";
 const ProjectDetails = () => {
   const projectDetails = [
     {
-      ProjectName: "Project 01",
-      GithubLinkIcon: "https://github.com/akanshaBharti",
+      ProjectName: "Ordinateur - Society's Website",
+      GithubLinkIcon: "https://github.com/4shreyas5/Ordinateur-Website",
       ProjectDescription:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architectoid recusandae iusto officiis impedit nesciunt quibusdam reprehenderiteligendi excepturi, expedita nemo, mollitia quisquam ea similique!Eaque asperiores suscipit voluptatum reprehenderit ipsa rem voluptateerror aliquam.",
-      ProjectLink: "https://github.com/akanshaBharti",
+        "Created an official website of Ordinateur - The Computer Science Society Of Hansraj College as a Software Engineering Project. It was a team project, my role was of frontend developer.",
+      ProjectStacks: "ReactJS | Tailwind CSS",
+        ProjectLink: "https://github.com/akanshaBharti",
     },
     {
-      ProjectName: "Project 02",
-      GithubLinkIcon: "https://github.com/akanshaBharti",
+      ProjectName: "Online Examination Portal",
+      GithubLinkIcon: "https://github.com/Online-Examination-Portal/online_exam_ui",
       ProjectDescription:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architectoid recusandae iusto officiis impedit nesciunt quibusdam reprehenderiteligendi excepturi, expedita nemo, mollitia quisquam ea similique!Eaque asperiores suscipit voluptatum reprehenderit ipsa rem voluptateerror aliquam.",
-      ProjectLink: "Project02.com",
+        "It is a digital platform that enables users to conduct and take exams over the Internet. My role was of frontend developer, creating intuitive and responsive Ui, intergrating API's and ensuring a seamless user experience. Engaged in teamwork with senior developers. Completed Phase 1 - Admin Panel of the website (It is desktop optimized).",
+      ProjectStacks: "ReactJS | Material UI | CSS",
+      ProjectLink: "https://onlineexamination.netlify.app/",
     },
     {
-      ProjectName: "Project 03",
-      GithubLinkIcon: "",
+      ProjectName: "Random Password Generator",
+      GithubLinkIcon: "https://github.com/akanshaBharti/Random_Password_Generator",
       ProjectDescription:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architectoid recusandae iusto officiis impedit nesciunt quibusdam reprehenderiteligendi excepturi, expedita nemo, mollitia quisquam ea similique!Eaque asperiores suscipit voluptatum reprehenderit ipsa rem voluptateerror aliquam.",
-      ProjectLink: "Project03.com",
+        "This password generator provides a simple and secure way to generate random passwords based on your specific criteria. Whether you need a password for your email, social media, or online accounts, our tool has you covered. Generated passwords can be copied to clipboard with one click.",
+      ProjectStacks: "ReactJS | Tailwind CSS",
+      ProjectLink: "https://randomcutomized-password-generator.vercel.app/",
     },
   ];
 
@@ -75,6 +78,7 @@ const ProjectDetails = () => {
               </Link>
             </div>
             <div>{projectDetails[currentProjectIndex].ProjectDescription}</div>
+            <div>{projectDetails[currentProjectIndex].ProjectStacks}</div>
             <div className="">
               <Link
                 to={projectDetails[currentProjectIndex].ProjectLink}

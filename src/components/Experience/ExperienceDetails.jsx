@@ -7,19 +7,25 @@ import { Button } from "@material-tailwind/react";
 const ExperienceDetails = () => {
   const experienceDetails = [
     {
-      ExperienceName: "Experience 01",
+      ExperienceName: "Frontend Developer Intern at CoziQ",
+      ExperiencePlace: "CoziQ Experiences - Private Dining Startup",
+      ExperienceTime: "[February 2024 - April 2024]", 
       ExperienceDescription:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architectoid recusandae iusto officiis impedit nesciunt quibusdam reprehenderiteligendi excepturi, expedita nemo, mollitia quisquam ea similique!Eaque asperiores suscipit voluptatum reprehenderit ipsa rem voluptateerror aliquam.",
+        "My work was to develop user interface and user experience components using React. Integrate APIs to enhance functionality and user experience. Collaborate with the team to implement design and functionality improvements. Ensure the technical feasibility of UI/UX designs. ", 
     },
     {
-      ExperienceName: "Experience 02",
+      ExperienceName: "Frontend Developer Intern at Bichhoos",
+      ExperiencePlace: "Bichhoos - E-commerce website for customized items",
+      ExperienceTime: "[January 2024 - April 2024]", 
       ExperienceDescription:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architectoid recusandae iusto officiis impedit nesciunt quibusdam reprehenderiteligendi excepturi, expedita nemo, mollitia quisquam ea similique!Eaque asperiores suscipit voluptatum reprehenderit ipsa rem voluptateerror aliquam.",
+        "My work involved UI/UX design of Bichhoos website. Integrate APIs to enhance functionality and user experience. Learned ReactJS, Tailwind CSS, Material UI, Git/GitHub.",
     },
     {
-      ExperienceName: "Experience 03",
+      ExperienceName: "General Secretary in College",
+      ExperiencePlace: "Ordinateur - The Computer Science Society Of Hansraj College",
+      ExperienceTime: "[October 2022 - October 2023]",
       ExperienceDescription:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architectoid recusandae iusto officiis impedit nesciunt quibusdam reprehenderiteligendi excepturi, expedita nemo, mollitia quisquam ea similique!Eaque asperiores suscipit voluptatum reprehenderit ipsa rem voluptateerror aliquam.",
+        "My work was to manage and coordinate a team of 100+ members smoothly and professionally. Coordinated with Team Heads and Teacher coordinators for the smooth flow of society and its events. Lead and managed events (as 3rd in charge).",
     },
   ];
 
@@ -58,7 +64,15 @@ const ExperienceDetails = () => {
         {/* description box */}
         <div className="relative md:mt-44 mt-28 ">
           <p className=" border border-2 border-white text-white p-8 shadow-lg bg-black bg-opacity-50 ">
+            <div className="text-xl">
+            {experienceDetails[currentExperienceIndex].ExperiencePlace}
+            </div>
+            <div className="text-xl">
+            {experienceDetails[currentExperienceIndex].ExperienceTime}
+            </div>
+            <div>
             {experienceDetails[currentExperienceIndex].ExperienceDescription}
+            </div>
           </p>
         </div>
       </div>
