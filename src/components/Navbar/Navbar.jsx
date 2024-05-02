@@ -16,7 +16,7 @@ const Navbar = () => {
             </div>
             {isOpen && (
                 <div className="fixed right-0 bg-black bg-opacity-75 text-white w-56 p-4 mr-2 rounded-lg border border-white">
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-center text-sm">
                         <Link to="/home" className="py-2 px-4 hover:bg-gray-700">Home</Link>
                         <Link to="/experience" className="py-2 px-4 hover:bg-gray-700">Work Experience</Link>
                         <Link to="/skills" className="py-2 px-4 hover:bg-gray-700">Skills</Link>

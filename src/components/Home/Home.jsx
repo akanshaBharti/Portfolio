@@ -54,7 +54,7 @@ const Home = () => {
         </div>
       </div>
       <img className="absolute pb-32" src={homeMinion} alt="homeMinion" />
-      <div className="absolute flex items-center justify-center pt-64">
+      <div className="absolute flex items-center justify-center pt-56 md:pt-64">
         <AboutMe />
       </div>
     </div>
