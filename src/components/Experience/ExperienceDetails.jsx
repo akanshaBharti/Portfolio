@@ -9,6 +9,7 @@ const ExperienceDetails = () => {
     {
       ExperienceName: "Frontend Developer Intern at CoziQ",
       ExperiencePlace: "CoziQ Experiences - Private Dining Startup",
+      Logo: "", 
       ExperienceTime: "[February 2024 - April 2024]", 
       ExperienceDescription:
         "My work was to develop user interface and user experience components using React. Integrate APIs to enhance functionality and user experience. Collaborate with the team to implement design and functionality improvements. Ensure the technical feasibility of UI/UX designs. ", 
@@ -16,6 +17,7 @@ const ExperienceDetails = () => {
     {
       ExperienceName: "Frontend Developer Intern at Bichhoos",
       ExperiencePlace: "Bichhoos - E-commerce website for customized items",
+      Logo: "", 
       ExperienceTime: "[January 2024 - April 2024]", 
       ExperienceDescription:
         "My work involved UI/UX design of Bichhoos website. Integrate APIs to enhance functionality and user experience. Learned ReactJS, Tailwind CSS, Material UI, Git/GitHub.",
@@ -23,6 +25,7 @@ const ExperienceDetails = () => {
     {
       ExperienceName: "General Secretary in College",
       ExperiencePlace: "Ordinateur - The Computer Science Society Of Hansraj College",
+      Logo: "", 
       ExperienceTime: "[October 2022 - October 2023]",
       ExperienceDescription:
         "My work was to manage and coordinate a team of 100+ members smoothly and professionally. Coordinated with Team Heads and Teacher coordinators for the smooth flow of society and its events. Lead and managed events (as 3rd in charge).",
