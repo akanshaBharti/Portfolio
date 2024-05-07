@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import contactBg from "../../images/contact_bg.png";
 import { Button } from "@material-tailwind/react";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
 
 const Contact = () => {
+  const [name, setName] = useState();
+  const [contact, setContact] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+    return emailRegex.test(email);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const authDetails = {
+      name : name,
+      contact : contact,
+      email: email,
+      message: message,
+    };
+    // login(authDetails);
+    // setIsEmailValid(validateEmail(email));
+  };
+
+  
+
   return (
     <div
       className="relative bg-cover bg-center h-screen flex items-center justify-center"
@@ -56,6 +80,7 @@ const Contact = () => {
                 <textarea className="bg-purple-400 bg-opacity-50  p-2 text-white md:w-full w-full"></textarea>
               </div>
               <button
+                onClick={handleSubmit}
                 type="submit"
                 className="bg-purple-700 hover:bg-purple-900 text-white font-bold py-2 px-6 rounded"
               >
