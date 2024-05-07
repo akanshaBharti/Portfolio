@@ -14,9 +14,15 @@ const Skills = () => {
     style={{ backgroundImage: `url(${skillsBg})` }}
     >
         <div
-        className="absolute bg-center md:h-screen md:w-full w-full h-screen"
-        style={{ backgroundImage: `url(${earth})`, top: 0 }}
-        >
+        className="absolute bg-center h-screen w-full  justify-center"
+        style={{
+          backgroundImage: `url(${earth})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          top: 0,
+        }}
+      >
             <div className="relative z-20 flex flex-col items-center justify-center gap-6 pt-6">
             <div className="absolute top-0 left-0 ml-4 hidden md:block">
             <Sidebar />

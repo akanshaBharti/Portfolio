@@ -14,10 +14,16 @@ const Home = () => {
       style={{ backgroundImage: `url(${backgroundImage1})` }}
     >
       <div
-        className="absolute bg-center h-screen w-full"
-        style={{ backgroundImage: `url(${backgroundImage2})`, top: 0 }}
+        className="absolute bg-center h-screen w-full  justify-center"
+        style={{
+          backgroundImage: `url(${backgroundImage2})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          top: 0,
+        }}
       >
-        <div className="relative z-20 flex flex-col items-center justify-center gap-6 pt-6">
+        <div className="relative z-20 flex flex-col items-center justify-center gap-8 pt-16">
           <div className="absolute top-0 left-0 ml-4 hidden md:block">
             <Sidebar />
           </div>
@@ -34,7 +40,7 @@ const Home = () => {
             </span>
           </h1>
           <div className="flex flex-col items-center space-y-4">
-            <p className="text-3xl md:text-4xl font-bold text-center shadow-lg">
+            <p className="text-3xl md:text-4xl font-bold text-center shadow-lg ">
               <span
                 className="text-purple-600"
                 style={{
