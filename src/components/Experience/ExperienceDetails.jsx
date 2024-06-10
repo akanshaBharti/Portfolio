@@ -3,29 +3,29 @@ import prevButton from "../../images/prev.png";
 import nextButton from "../../images/next.png";
 import { Button } from "@material-tailwind/react";
 
-
 const ExperienceDetails = () => {
   const experienceDetails = [
     {
       ExperienceName: "Frontend Developer Intern at CoziQ",
       ExperiencePlace: "CoziQ Experiences - Private Dining Startup",
-      Logo: "", 
-      ExperienceTime: "[February 2024 - April 2024]", 
+      Logo: "",
+      ExperienceTime: "[February 2024 - April 2024]",
       ExperienceDescription:
-        "My work was to develop user interface and user experience components using React. Integrate APIs to enhance functionality and user experience. Collaborate with the team to implement design and functionality improvements. Ensure the technical feasibility of UI/UX designs. ", 
+        "My work was to develop user interface and user experience components using React. Integrate APIs to enhance functionality and user experience. Collaborate with the team to implement design and functionality improvements. Ensure the technical feasibility of UI/UX designs. ",
     },
     {
       ExperienceName: "Frontend Developer Intern at Bichhoos",
       ExperiencePlace: "Bichhoos - E-commerce website for customized items",
-      Logo: "", 
-      ExperienceTime: "[January 2024 - April 2024]", 
+      Logo: "",
+      ExperienceTime: "[January 2024 - April 2024]",
       ExperienceDescription:
         "My work involved UI/UX design of Bichhoos website. Integrate APIs to enhance functionality and user experience. Learned ReactJS, Tailwind CSS, Material UI, Git/GitHub.",
     },
     {
       ExperienceName: "General Secretary in College",
-      ExperiencePlace: "Ordinateur - The Computer Science Society Of Hansraj College",
-      Logo: "", 
+      ExperiencePlace:
+        "Ordinateur - The Computer Science Society Of Hansraj College",
+      Logo: "",
       ExperienceTime: "[October 2022 - October 2023]",
       ExperienceDescription:
         "My work was to manage and coordinate a team of 100+ members smoothly and professionally. Coordinated with Team Heads and Teacher coordinators for the smooth flow of society and its events. Lead and managed events (as 3rd in charge).",
@@ -49,7 +49,6 @@ const ExperienceDetails = () => {
   return (
     <div className="flex items-center justify-center w-3/4 h-1/2 md:w-1/2 ">
       <div>
-        {/* project heading */}
         <div>
           <p className="text-3xl md:text-4xl text-center shadow-lg mb-8 pt-4">
             <span
@@ -64,23 +63,21 @@ const ExperienceDetails = () => {
           </p>
         </div>
 
-        {/* description box */}
         <div className="relative md:mt-44 mt-28 ">
           <p className=" border border-2 border-white text-white p-8 shadow-lg bg-black bg-opacity-50 ">
             <div className="text-xl">
-            {experienceDetails[currentExperienceIndex].ExperiencePlace}
+              {experienceDetails[currentExperienceIndex].ExperiencePlace}
             </div>
             <div className="text-xl">
-            {experienceDetails[currentExperienceIndex].ExperienceTime}
+              {experienceDetails[currentExperienceIndex].ExperienceTime}
             </div>
             <div>
-            {experienceDetails[currentExperienceIndex].ExperienceDescription}
+              {experienceDetails[currentExperienceIndex].ExperienceDescription}
             </div>
           </p>
         </div>
       </div>
 
-      {/* navigation buttons */}
       <div className="absolute z-20 justify-between flex md:w-full w-screen md:mt-4">
         <Button
           type="submit"
