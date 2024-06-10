@@ -38,7 +38,7 @@ const Skills = () => {
               MY SKILLS
             </span>
           </h1>
-          <div className="flex flex-col items-center space-y-4">
+          {/* <div className="flex flex-col items-center space-y-4">
             <p className="text-2xl md:text-3xl text-center shadow-lg">
               <span
                 className="text-white"
@@ -50,7 +50,7 @@ const Skills = () => {
                 HERE IS THE LIST OF SOME OF MY SKILLS
               </span>
             </p>
-          </div>
+          </div> */}
           <div >
             <TechStacks/>
           </div>

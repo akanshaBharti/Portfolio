@@ -4,6 +4,8 @@ import { Button } from "@material-tailwind/react";
 import Navbar from "../Navbar/Navbar";
 import Sidebar from "../Sidebar/Sidebar";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const form = useRef();
@@ -51,7 +53,7 @@ const Contact = () => {
         .then(
           () => {
             console.log("SUCCESS!");
-            alert("SUCCESS");
+            toast.success("Message sent successfully!");
             setName("");
             setContact("");
             setEmail("");
@@ -59,11 +61,10 @@ const Contact = () => {
           },
           (error) => {
             console.log("FAILED", error.text);
-            alert("FAILED");
+            toast.error("FAILED to send message. Please try again.");
           }
         );
     }
-
   };
 
   return (
@@ -71,9 +72,10 @@ const Contact = () => {
       className="relative bg-cover bg-center h-screen flex items-center justify-center"
       style={{ backgroundImage: `url(${contactBg})` }}
     >
+      <ToastContainer />
       <div className="absolute w-full h-screen bg-center">
         <div className="relative z-20 flex flex-col items-center justify-center  pt-16">
-          <div className="absolute md:top-0 md:left-0 md:ml-4 md:block hidden">
+            <div className="absolute top-0 left-0 ml-1 md:block md:ml-4 mt-10 ">
             <Sidebar />
           </div>
 
@@ -90,70 +92,67 @@ const Contact = () => {
           </h1>
 
           <div className="flex items-center justify-center md:mt-18 mt-14 ">
-            <form
-              className="text-white md:p-8 "
-              ref={form}
-            >
+            <form className="text-white md:p-8 " ref={form}>
               <div className="mb-4 md:flex md:flex-row md:gap-7 ">
                 <label className="text-xl md:text-2xl mr-2">Name:</label>
-                <input
-                  type="text"
-                  name="name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  className={`bg-purple-400 bg-opacity-50 p-2 text-white md:w-96 w-full ${
-                    errors.name ? "border-red-500 border-2" : ""
-                  }`}
-                />
-                {errors.name && (
-                  <span className="text-red-500">{errors.name}</span>
-                )}
+                <div className="flex flex-col">
+                  <input
+                    type="text"
+                    name="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    className="bg-purple-400 bg-opacity-50 p-2 text-white md:w-96 w-full"
+                  />
+                  {errors.name && (
+                    <span className="text-red-500">{errors.name}</span>
+                  )}
+                </div>
               </div>
               <div className="mb-4 md:flex md:flex-row md:gap-3">
                 <label className="text-xl md:text-2xl mr-2">Contact:</label>
-                <input
-                  type="number"
-                  name="contact"
-                  value={contact}
-                  onChange={(e) => setContact(e.target.value)}
-                  className={`bg-purple-400 bg-opacity-50 p-2 text-white md:w-full w-full ${
-                    errors.contact ? "border-red-500 border-2" : ""
-                  }`}
-                />
-                {errors.contact && (
-                  <span className="text-red-500">{errors.contact}</span>
-                )}
+                <div className="flex flex-col">
+                  <input
+                    type="number"
+                    name="contact"
+                    value={contact}
+                    onChange={(e) => setContact(e.target.value)}
+                    className="bg-purple-400 bg-opacity-50 p-2 text-white md:w-96 w-full"
+                  />
+                  {errors.contact && (
+                    <span className="text-red-500">{errors.contact}</span>
+                  )}
+                </div>
               </div>
               <div className="mb-4 md:flex md:flex-row md:gap-9">
                 <label className="text-xl md:text-2xl mr-2">Email:</label>
-                <input
-                  type="text"
-                  name="email"
-                  value={email}
-                  onChange={(e) => {
-                    setEmail(e.target.value);
-                  }}
-                  className={`bg-purple-400 bg-opacity-50 p-2 text-white md:w-full w-full ${
-                    errors.email ? "border-red-500 border-2" : ""
-                  }`}
-                />
-                {errors.email && (
-                  <span className="text-red-500">{errors.email}</span>
-                )}
+                <div className="flex flex-col">
+                  <input
+                    type="text"
+                    name="email"
+                    value={email}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
+                    className="bg-purple-400 bg-opacity-50 p-2 text-white md:w-96 w-full"
+                  />
+                  {errors.email && (
+                    <span className="text-red-500">{errors.email}</span>
+                  )}
+                </div>
               </div>
               <div className="mb-4 md:flex md:flex-row ">
                 <label className="text-xl md:text-2xl mr-2">Message:</label>
-                <textarea
-                  name="message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  className={`bg-purple-400 bg-opacity-50 p-2 text-white md:w-full w-full ${
-                    errors.message ? "border-red-500 border-2" : ""
-                  }`}
-                ></textarea>
-                {errors.message && (
-                  <span className="text-red-500">{errors.message}</span>
-                )}
+                <div className="flex flex-col">
+                  <textarea
+                    name="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    className="bg-purple-400 bg-opacity-50 p-2 text-white md:w-96 w-full"
+                  ></textarea>
+                  {errors.message && (
+                    <span className="text-red-500">{errors.message}</span>
+                  )}
+                </div>
               </div>
               <button
                 onClick={handleSubmit}
@@ -166,7 +165,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
       <div className="absolute top-0 right-0 mr-4 mt-2 ">
         <Button>
           <Navbar />
