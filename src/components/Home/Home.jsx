@@ -2,6 +2,7 @@ import React from "react";
 import backgroundImage1 from "../../images/home_bg2.png";
 import backgroundImage2 from "../../images/earth.png";
 import homeMinion from "../../images/home_minion.png";
+import download from "../../images/download.png";
 import { Button } from "@material-tailwind/react";
 import AboutMe from "../About/AboutMe";
 import Navbar from "../Navbar/Navbar";
@@ -63,6 +64,7 @@ const Home = () => {
       <div className="absolute flex items-center justify-center pt-56 md:pt-64">
         <AboutMe />
       </div>
+
     </div>
   );
 };
