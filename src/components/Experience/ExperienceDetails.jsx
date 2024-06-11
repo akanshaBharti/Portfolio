@@ -46,11 +46,12 @@ const ExperienceDetails = () => {
     );
   };
 
-  return (
-    <div className="flex items-center justify-center w-3/4 h-1/2 md:w-1/2 ">
-      <div>
-        <div>
-          <p className="text-3xl md:text-4xl text-center shadow-lg mb-8 pt-4">
+  return ( //flex flex-col items-center justify-center w-full h-1/2 md:w-1/2 h-auto md:h-1/2
+    <div className="flex flex-col items-center justify-center w-full h-1/2 md:w-1/2 h-auto">
+    {/* <div className="flex items-center justify-center w-3/4 h-1/2 md:w-1/2 "> */}
+      <div className="">
+        <div className="">
+          <p className="text-3xl md:text-4xl text-center shadow-lg mb-8 pt-2">
             <span
               className="text-white"
               style={{
@@ -64,7 +65,7 @@ const ExperienceDetails = () => {
         </div>
 
         <div className="relative md:mt-44 mt-28 ">
-          <p className=" border border-2 border-white text-white p-8 shadow-lg bg-black bg-opacity-50 ">
+          <div className=" border border-2 border-white text-white p-8 shadow-lg bg-black bg-opacity-50 ">
             <div className="text-xl">
               {experienceDetails[currentExperienceIndex].ExperiencePlace}
             </div>
@@ -74,7 +75,7 @@ const ExperienceDetails = () => {
             <div>
               {experienceDetails[currentExperienceIndex].ExperienceDescription}
             </div>
-          </p>
+          </div>
         </div>
       </div>
 

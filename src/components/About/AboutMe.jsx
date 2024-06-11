@@ -26,7 +26,7 @@ const AboutMe = () => {
             className="w-1/2 h-3/4 ml-16 md:w-3/4 md:ml-10"
           />
         </Button>
-      ) : (
+      ) : ( //relative w-3/4 h-1/2 md:w-1/2 mb-2
         <div className="relative w-3/4 h-1/2 md:w-1/2 mb-2">
           <div className="absolute top-0 right-0 m-2">
             <Button className="" onClick={handleCloseAboutMe}>

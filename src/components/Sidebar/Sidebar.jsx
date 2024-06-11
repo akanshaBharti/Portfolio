@@ -4,6 +4,7 @@ import githubIcon from "../../images/githubIcon.png";
 import linkedinIcon from "../../images/linkedin.png";
 import gmailIcon from "../../images/gmail.png";
 import twitterIcon from "../../images/twitter.png";
+import resumeD from "../../images/resumeD-48.png";
 
 const Sidebar = () => {
   return (
@@ -19,6 +20,9 @@ const Sidebar = () => {
       </Link>
       <Link to="akanshabharti1213@gmail.com" target="blank">
         <img src={gmailIcon} alt="gmail" className="py-4 px-4" title="Gmail" />
+      </Link>
+      <Link to="https://drive.google.com/file/d/1NkOT4GfR6Z7PHKWWxLhDe6EOkPIHoHhQ/view?usp=sharing" target="blank">
+        <img src={resumeD} alt="download resume" className="py-4 px-4" title="Download Resume" />
       </Link>
     </div>
   );
