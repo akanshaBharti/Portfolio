@@ -24,7 +24,7 @@ const Experience = () => {
           top: 0,
         }} 
       >
-            <div className="relative z-20 flex flex-col items-center justify-center gap-6 pt-6">
+            <div className="relative z-20 flex flex-col items-center justify-center gap-8 pt-16">
             <div className="absolute top-0 left-0 ml-4 hidden md:block">
             <Sidebar />
           </div>
