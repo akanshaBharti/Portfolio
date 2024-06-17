@@ -14,7 +14,7 @@ const Home = () => {
       style={{ backgroundImage: `url(${backgroundImage1})` }}
     >
       <div
-        className="absolute bg-center h-screen w-full  justify-center"
+        className="absolute bg-center h-screen w-full justify-center"
         style={{
           backgroundImage: `url(${backgroundImage2})`,
           backgroundSize: "cover",

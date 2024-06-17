@@ -26,15 +26,14 @@ const AboutMe = () => {
             className="w-1/2 h-3/4 ml-16 md:w-3/4 md:ml-10"
           />
         </Button>
-      ) : ( //relative w-3/4 h-1/2 md:w-1/2 mb-2
-        <div className="relative w-3/4 h-1/2 md:w-1/2 mb-2">
-          <div className="absolute top-0 right-0 m-2">
+      ) : ( 
+        <div className="relative w-full h-1/2 md:w-1/2 md:mb-2 m-2 w-full">
+          <div className="absolute top-0 right-0 mt-4 ">
             <Button className="" onClick={handleCloseAboutMe}>
               <img src={closeButton} alt="closeButton" className="w-7 h-7" />
             </Button>
           </div>
-
-          <p className="border border-2 border-white text-white p-8 shadow-lg bg-black bg-opacity-50">
+          <p className="border border-2 border-white text-white md:p-8 p-4 shadow-lg bg-black md:bg-opacity-50 bg-opacity-75">
             Hello! I'm Akansha, a passionate Frontend Web Developer and tech
             enthusiast. I am specialized in converting innovative UI designs into
             functional, beautiful, and user-friendly web applications. I thrive
@@ -46,6 +45,7 @@ const AboutMe = () => {
             bring my creativity and expertise to every project I undertake.
             Let's build something amazing together!
           </p>
+          
         </div>
       )}
     </div>
