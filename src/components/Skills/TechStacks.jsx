@@ -12,7 +12,7 @@ import materialUI from "../../images/materialUI.png";
 
 const TechStacks = () => {
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4 md:gap-6 text-white md:mt-32 mt-32 ml-2 mr-2">
+    <div className="divPara grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4 md:gap-6 text-white md:mt-32 mt-32 ml-2 mr-2">
       <div className="flex flex-row items-center border border-white md:w-full md:h-full w-auto h-16 text-xl md:text-3xl p-3 bg-black bg-opacity-50 shadow-xl hover:shadow-black">
         <img src={react} alt="reactIcon" className="w-10 h-12 mr-2" />
         ReactJS

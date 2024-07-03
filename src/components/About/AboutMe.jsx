@@ -33,7 +33,7 @@ const AboutMe = () => {
               <img src={closeButton} alt="closeButton" className="w-7 h-7" />
             </Button>
           </div>
-          <p className="border border-2 border-white text-white md:p-8 p-4 shadow-lg bg-black md:bg-opacity-50 bg-opacity-75">
+          <p className="divPara border border-2 border-white text-white md:p-8 p-4 shadow-lg bg-black md:bg-opacity-50 bg-opacity-75">
             Hello! I'm Akansha, a passionate Frontend Web Developer and tech
             enthusiast. I am specialized in converting innovative UI designs into
             functional, beautiful, and user-friendly web applications. I thrive

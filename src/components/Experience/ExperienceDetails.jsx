@@ -73,7 +73,7 @@ const ExperienceDetails = () => {
         </div>
         
         
-        <div className="relative md:mt-32 mt-18 ">
+        <div className="divPara relative md:mt-32 mt-18 ">
           <div className=" border border-2 border-white text-white p-8 shadow-lg bg-black md:bg-opacity-50 bg-opacity-75 ">
             <div className="text-xl ">
               {experienceDetails[currentExperienceIndex].ExperiencePlace}
