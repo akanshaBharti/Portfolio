@@ -49,11 +49,11 @@ const ProjectDetails = () => {
   };
 
   return (
-    <div className="flex items-center justify-center w-3/4 h-1/2 md:w-1/2">
+    <div className="flex flex-col items-center justify-center w-full h-1/2 md:w-1/2 h-auto m-2">
       <div>
         {/* project heading */}
         <div>
-          <p className="text-3xl md:text-4xl text-center shadow-lg mb-8 pt-4">
+          <p className="text-3xl md:text-4xl text-center shadow-lg mb-8 ">
             <span
               className="text-white"
               style={{
@@ -68,7 +68,7 @@ const ProjectDetails = () => {
 
         {/* description box */}
         <div className="relative md:mt-44 mt-32 ">
-          <p className=" border border-2 border-white text-white p-4 shadow-lg bg-black bg-opacity-50 flex flex-col items-center">
+          <p className=" border border-2 border-white text-white p-4 shadow-lg bg-black bg-opacity-50 flex flex-col items-center ">
             <div className="">
             <Link
                 to={projectDetails[currentProjectIndex].GithubLinkIcon}

@@ -6,7 +6,15 @@ import { Button } from "@material-tailwind/react";
 const ExperienceDetails = () => {
   const experienceDetails = [
     {
-      ExperienceName: "Frontend Developer Intern at CoziQ",
+      ExperienceName: "Frontend React Developer Intern at Beyond Tax",
+      ExperiencePlace: "Aiyug BeyondTax Private Limited",
+      Logo: "",
+      ExperienceTime: "[June 2024 - Present]",
+      ExperienceDescription:
+        "My work is to develop and maintain frontend code using React. Collaborate with the development team to design and implement new features. Assisting in debugging and troubleshooting issues in the codebase.",
+    },
+    {
+      ExperienceName: "Frontend React Developer Intern at CoziQ",
       ExperiencePlace: "CoziQ Experiences - Private Dining Startup",
       Logo: "",
       ExperienceTime: "[February 2024 - April 2024]",
@@ -33,6 +41,7 @@ const ExperienceDetails = () => {
   ];
 
   const [currentExperienceIndex, setCurrentExperienceIndex] = useState(0);
+  
 
   const goToNextExperience = () => {
     setCurrentExperienceIndex((prevIndex) =>
@@ -46,12 +55,11 @@ const ExperienceDetails = () => {
     );
   };
 
-  return ( //flex flex-col items-center justify-center w-full h-1/2 md:w-1/2 h-auto md:h-1/2
-    <div className="flex flex-col items-center justify-center w-full h-1/2 md:w-1/2 h-auto">
-    {/* <div className="flex items-center justify-center w-3/4 h-1/2 md:w-1/2 "> */}
+  return ( 
+    <div className="flex flex-col items-center justify-center w-full h-1/2 md:w-1/2 h-auto m-2">
       <div className="">
         <div className="">
-          <p className="text-3xl md:text-4xl text-center shadow-lg mb-8 pt-2">
+          <p className="text-3xl md:text-4xl text-center shadow-lg mb-8 md:pt-2">
             <span
               className="text-white"
               style={{
@@ -63,10 +71,11 @@ const ExperienceDetails = () => {
             </span>
           </p>
         </div>
-
-        <div className="relative md:mt-36 mt-28 ">
-          <div className=" border border-2 border-white text-white p-8 shadow-lg bg-black bg-opacity-50 ">
-            <div className="text-xl">
+        
+        
+        <div className="relative md:mt-32 mt-18 ">
+          <div className=" border border-2 border-white text-white p-8 shadow-lg bg-black md:bg-opacity-50 bg-opacity-75 ">
+            <div className="text-xl ">
               {experienceDetails[currentExperienceIndex].ExperiencePlace}
             </div>
             <div className="text-xl">
@@ -78,8 +87,7 @@ const ExperienceDetails = () => {
           </div>
         </div>
       </div>
-
-      <div className="absolute z-20 justify-between flex md:w-full w-screen md:mt-4">
+      <div className="absolute z-20 justify-between flex w-full w-screen md:mt-4">
         <Button
           type="submit"
           className="px-2 md:px-4 py-2 md:ml-20 w-16 md:w-auto"
@@ -96,6 +104,7 @@ const ExperienceDetails = () => {
           <img src={nextButton} alt="nextButton" />
         </Button>
       </div>
+      
     </div>
   );
 };

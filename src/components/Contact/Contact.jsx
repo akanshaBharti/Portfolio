@@ -52,7 +52,6 @@ const Contact = () => {
         )
         .then(
           () => {
-            console.log("SUCCESS!");
             toast.success("Message sent successfully!");
             setName("");
             setContact("");
@@ -60,7 +59,6 @@ const Contact = () => {
             setMessage("");
           },
           (error) => {
-            console.log("FAILED", error.text);
             toast.error("FAILED to send message. Please try again.");
           }
         );
@@ -112,7 +110,7 @@ const Contact = () => {
                 <label className="text-xl md:text-2xl mr-2">Contact:</label>
                 <div className="flex flex-col">
                   <input
-                    type="number"
+                    type="text"
                     name="contact"
                     value={contact}
                     onChange={(e) => setContact(e.target.value)}
