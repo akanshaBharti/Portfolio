@@ -72,12 +72,12 @@ const Contact = () => {
     >
       <ToastContainer />
       <div className="absolute w-full h-screen bg-center">
-        <div className="relative z-20 flex flex-col items-center justify-center  pt-16">
+        <div className="relative z-20 flex flex-col items-center justify-center pt-16">
             <div className="absolute top-0 left-0 ml-1 md:block md:ml-4 mt-10 ">
             <Sidebar />
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-white text-center ">
+          <h1 className="heading text-4xl md:text-5xl font-bold text-white text-center ">
             <span
               className="text-purple-600"
               style={{
@@ -91,8 +91,8 @@ const Contact = () => {
 
           <div className="flex items-center justify-center md:mt-18 mt-14 ">
             <form className="text-white md:p-8 " ref={form}>
-              <div className="mb-4 md:flex md:flex-row md:gap-7 ">
-                <label className="text-xl md:text-2xl mr-2">Name:</label>
+              <div className="divPara mb-4 md:flex md:flex-row md:gap-7 ">
+                <label className="text-xl md:text-2xl">Name:</label>
                 <div className="flex flex-col">
                   <input
                     type="text"

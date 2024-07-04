@@ -55,7 +55,7 @@ const ProjectDetails = () => {
       {/* <div> */}
       {/* project heading */}
       <div>
-        <p className="text-3xl md:text-4xl text-center shadow-lg mb-8 ">
+        <p className="navbar text-3xl md:text-4xl text-center shadow-lg mb-8 ">
           <span
             className="text-white"
             style={{

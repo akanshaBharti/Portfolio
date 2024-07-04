@@ -9,7 +9,17 @@
 
 .divPara{
   font-family: montserrat;
-  font-weight: 300;
+  font-weight: 350;
+}
+
+.navbar{
+  font-family: montserrat;
+  font-weight: 500;
+}
+
+.heading{
+  font-family: montserrat;
+  font-weight: 700;
 }
 
 /* body {

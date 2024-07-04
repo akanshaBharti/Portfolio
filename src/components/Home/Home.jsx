@@ -28,7 +28,7 @@ const Home = () => {
             <Sidebar />
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-white text-center shadow-lg">
+          <h1 className="heading text-4xl md:text-5xl font-bold text-white text-center shadow-lg">
             <span
               className="text-purple-600"
               style={{
@@ -40,7 +40,7 @@ const Home = () => {
             </span>
           </h1>
           <div className="flex flex-col items-center space-y-4">
-            <p className="text-3xl md:text-4xl font-bold text-center shadow-lg ">
+            <p className="heading text-3xl md:text-4xl font-bold text-center shadow-lg ">
               <span
                 className="text-purple-600"
                 style={{
@@ -60,7 +60,8 @@ const Home = () => {
         </div>
       </div>
       <img className="absolute pb-32" src={homeMinion} alt="homeMinion" />
-      <div className="absolute flex items-center justify-center pt-60 md:pt-64">
+      {/* pt-[32rem] md:px-0 px-2*/}
+      <div className="absolute flex items-center justify-center pt-60 md:pt-64 ">
         <AboutMe />
       </div>
 
