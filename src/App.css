@@ -22,6 +22,17 @@
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  .bg-cover {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg-center {
+    background-position: center;
+  }
+}
+
 /* body {
   font-family: montserrat;
 } */

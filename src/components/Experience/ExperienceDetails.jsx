@@ -57,7 +57,7 @@ const ExperienceDetails = () => {
 
   return ( 
     <div className="flex flex-col items-center justify-center w-full h-1/2 md:w-1/2 h-auto m-2">
-      <div className="">
+      {/* <div className=""> */}
         <div className="">
           <p className="navbar text-3xl md:text-4xl text-center shadow-lg mb-8 md:pt-2">
             <span
@@ -73,7 +73,7 @@ const ExperienceDetails = () => {
         </div>
         
         
-        <div className="divPara relative md:mt-28 mt-18 ">
+        <div className="divPara relative md:mt-20 mt-[2rem] ">
           <div className=" border border-2 border-white text-white p-8 shadow-lg bg-black md:bg-opacity-50 bg-opacity-75 ">
             <div className="text-xl ">
               {experienceDetails[currentExperienceIndex].ExperiencePlace}
@@ -86,18 +86,18 @@ const ExperienceDetails = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="absolute z-20 justify-between flex w-full w-screen md:mt-4">
+      {/* </div> */}
+      <div className="absolute z-20 justify-between flex w-full w-screen md:mt-4 mb-[14rem] md:mb-0">
         <Button
           type="submit"
-          className="px-2 md:px-4 py-2 md:ml-20 w-16 md:w-auto"
+          className="px-2 md:px-4 py-2 md:ml-20 md:w-16 w-14 md:w-auto"
           onClick={goToPreviousExperience}
           disabled={currentExperienceIndex === 0}
         >
           <img src={prevButton} alt="previousButton" />
         </Button>
         <Button
-          className="px-2 md:px-4 py-2 md:mr-20 w-16 md:w-auto"
+          className="px-2 md:px-4 py-2 md:mr-20 md:w-16 w-14 md:w-auto"
           onClick={goToNextExperience}
           disabled={currentExperienceIndex === experienceDetails.length - 1}
         >

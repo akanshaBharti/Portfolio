@@ -10,11 +10,11 @@ import Sidebar from "../Sidebar/Sidebar";
 const Home = () => {
   return (
     <div
-      className="relative bg-cover bg-center h-screen flex items-center justify-center"
+      className=" relative bg-cover bg-center h-screen flex items-center justify-center"
       style={{ backgroundImage: `url(${backgroundImage1})` }}
     >
       <div
-        className="absolute bg-center h-screen w-full justify-center"
+        className=" absolute bg-center h-screen w-full justify-center"
         style={{
           backgroundImage: `url(${backgroundImage2})`,
           backgroundSize: "cover",
@@ -60,8 +60,8 @@ const Home = () => {
         </div>
       </div>
       <img className="absolute pb-32" src={homeMinion} alt="homeMinion" />
-      {/* pt-[32rem] md:px-0 px-2*/}
-      <div className="absolute flex items-center justify-center pt-60 md:pt-64 ">
+      {/* pt-60 md:pt-64  */}
+      <div className="absolute flex items-center justify-center ">
         <AboutMe />
       </div>
 

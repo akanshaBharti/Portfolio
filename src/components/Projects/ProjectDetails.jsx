@@ -96,17 +96,17 @@ const ProjectDetails = () => {
 
 
       {/* navigation buttons */}
-      <div className="absolute z-20 justify-between flex  md:w-full w-screen  md:mt-4">
+      <div className="absolute z-20 justify-between flex  md:w-full w-screen  md:mt-4 mb-[14rem] md:mb-0">
         <Button
           type="submit"
-          className="px-2 md:px-4 py-2 md:ml-20 w-16 md:w-auto"
+          className="px-2 md:px-4 py-2 md:ml-20 md:w-16 w-14 md:w-auto"
           onClick={goToPreviousProject}
           disabled={currentProjectIndex === 0}
         >
           <img src={prevButton} alt="previousButton" />
         </Button>
         <Button
-          className="px-2 md:px-4 py-2 md:mr-20 w-16 md:w-auto"
+          className="px-2 md:px-4 py-2 md:mr-20 md:w-16 w-14 md:w-auto"
           onClick={goToNextProject}
           disabled={currentProjectIndex === projectDetails.length - 1}
         >

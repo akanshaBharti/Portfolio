@@ -20,6 +20,9 @@ const MyRoutes = () => {
         {/* <Route path='/aboutme' element = {<AboutMe/>}/> */}
       </Routes>
     </BrowserRouter>
+
+    
+
   );
 };
 
