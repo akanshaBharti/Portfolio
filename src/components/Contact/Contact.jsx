@@ -89,7 +89,7 @@ const Contact = () => {
             </span>
           </h1>
 
-          <div className="flex items-center justify-center md:mt-18 mt-14 ">
+          <div className="flex items-center justify-center md:mt-18 mt-14 pl-12 md:pl-0 ">
             <form className="text-white md:p-8 " ref={form}>
               <div className="divPara mb-4 md:flex md:flex-row md:gap-7 ">
                 <label className="text-xl md:text-2xl">Name:</label>
