@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import prevButton from "../../images/prev.png";
 import nextButton from "../../images/next.png";
 import { Button } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import github from "../../images/githubIcon.png";
 import link32 from "../../images/link32.png";
 
@@ -52,7 +52,6 @@ const ProjectDetails = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-1/2 md:w-1/2 h-auto m-2">
-      {/* <div> */}
       {/* project heading */}
       <div>
         <p className="navbar text-3xl md:text-4xl text-center shadow-lg mb-8 ">
@@ -69,32 +68,32 @@ const ProjectDetails = () => {
       </div>
 
       {/* description box */}
-      <div className="divPara relative md:mt-34 mt-32 ">
+      <div className="divPara relative md:mt-34 mt-28 ">
         <p className="gap-2 border border-2 border-white text-white p-4 shadow-lg bg-black bg-opacity-50 flex flex-col items-center ">
           <div className="flex gap-6">
             <Link
               to={projectDetails[currentProjectIndex].GithubLinkIcon}
               target="blank"
+              className="z-50"
             >
-              <img src={github} alt="githubIcon" className="w-12 h-12 border rounded-full" />
+              <img src={github} alt="githubIcon" className="w-12 h-12 " />
             </Link>
+            
             <Link
             to={projectDetails[currentProjectIndex].ProjectLink}
             target="blank"
+            className="z-50"
           >
-            <img src={link32} alt="LinkIcon" className="h-9 mt-2 border" />
+            <img src={link32} alt="LinkIcon" className="h-9 mt-2 " />
           </Link>
           </div>
           <div>{projectDetails[currentProjectIndex].ProjectDescription}</div>
           <div>{projectDetails[currentProjectIndex].ProjectStacks}</div>
-          {/* <div>
-          
-        </div> */}
+         
         </p>
         
       </div>
 
-      {/* </div> */}
 
       {/* navigation buttons */}
       <div className="absolute z-20 justify-between flex  md:w-full w-screen  md:mt-4">
