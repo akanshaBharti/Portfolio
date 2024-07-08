@@ -69,26 +69,31 @@ const ProjectDetails = () => {
       </div>
 
       {/* description box */}
-      <div className="divPara relative md:mt-36 mt-32 ">
+      <div className="divPara relative md:mt-34 mt-32 ">
         <p className="gap-2 border border-2 border-white text-white p-4 shadow-lg bg-black bg-opacity-50 flex flex-col items-center ">
-          <div className="flex gap-4">
+          <div className="flex gap-6">
             <Link
               to={projectDetails[currentProjectIndex].GithubLinkIcon}
               target="blank"
             >
-              <img src={github} alt="githubIcon" className="w-12 h-12" />
+              <img src={github} alt="githubIcon" className="w-12 h-12 border rounded-full" />
             </Link>
             <Link
-              to={projectDetails[currentProjectIndex].ProjectLink}
-              target="blank"
-            >
-              <img src={link32} alt="LinkIcon" className="h-9 mt-1" />
-            </Link>
+            to={projectDetails[currentProjectIndex].ProjectLink}
+            target="blank"
+          >
+            <img src={link32} alt="LinkIcon" className="h-9 mt-2 border" />
+          </Link>
           </div>
           <div>{projectDetails[currentProjectIndex].ProjectDescription}</div>
           <div>{projectDetails[currentProjectIndex].ProjectStacks}</div>
+          {/* <div>
+          
+        </div> */}
         </p>
+        
       </div>
+
       {/* </div> */}
 
       {/* navigation buttons */}
